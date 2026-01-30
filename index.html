@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fabricamos productos de fibra de vidrio de alta calidad: jacuzzis, piscinas, lavaderos y rodaderos. Cotiza directamente por WhatsApp.">
+    <title>FibraVidrio Express | Productos en Fibra de Vidrio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <i class="fas fa-water"></i>
+                        <span>Fibras & Jacuzzis</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#products" class="nav-link">Productos</a></li>
+                    <li><a href="#pagos" class="nav-link">Métodos de Pago</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li class="whatsapp-header">
+                        <a href="https://wa.me/573236713326?text=Hola%20Fibras&Jacuzzis,%20me%20interesa%20cotizar%20un%20producto" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Cotizar por WhatsApp
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Fibras & Jacuzzis</h1>
+                <h2 class="hero-subtitle">Fabricamos experiencias de relajación y diversión</h2>
+                <p class="hero-description">Productos de fibra de vidrio de alta calidad, durabilidad y diseño innovador para hogares y espacios comerciales. Cotiza directamente por WhatsApp.</p>
+                <div class="hero-buttons">
+                    <a href="#quote" class="btn-primary btn-large">
+                        <i class="fas fa-file-invoice-dollar"></i> Solicitar Cotización
+                    </a>
+                    <a href="https://wa.me/573236713326?text=Hola%20Fibras&Jacuzzis,%20me%20interesa%20cotizar%20un%20producto" target="_blank" class="btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Directo
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="swiper heroSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1575428652377-a2d80e227043?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+<div class="slide-caption">Jacuzzis de Lujo</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1598940603846-a1edd0ef5274?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                            <div class="slide-caption">Piscinas Familiares</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                            <div class="slide-caption">Rodaderos Divertidos</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-subtitle">Haz clic en cualquier producto para cotizarlo directamente por WhatsApp</p>
+            </div>
+            
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="jacuzzis">Jacuzzis</button>
+                <button class="category-btn" data-category="pools">Piscinas</button>
+                <button class="category-btn" data-category="sinks">Lavaderos</button>
+                <button class="category-btn" data-category="slides">Rodaderos</button>
+            </div>
+            
+            <div class="products-grid" id="productsContainer">
+                <!-- Productos se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cotización -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Solicita tu Cotización</h2>
+                <p class="section-subtitle">Completa el formulario o contáctanos directamente por WhatsApp</p>
+            </div>
+            
+            <div class="quote-container">
+                <div class="quote-form">
+                    <div class="form-intro">
+                        <h3><i class="fas fa-comment-alt"></i> Cotización Rápida</h3>
+                        <p>Te contactaremos en menos de 30 minutos para darle seguimiento a tu solicitud.</p>
+                    </div>
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quoteName">Nombre Completo *</label>
+                                <input type="text" id="quoteName" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="quotePhone">Teléfono *</label>
+                                <input type="tel" id="quotePhone" required placeholder="Tu número de WhatsApp">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteProduct">Producto de Interés *</label>
+                            <select id="quoteProduct" required>
+                                <option value="">Selecciona un producto</option>
+<option value="jacuzzi">Jacuzzi</option>
+                                <option value="piscina">Piscina</option>
+                                <option value="lavadero">Lavadero</option>
+                                <option value="rodadero">Rodadero</option>
+                                <option value="varios">Varios productos</option>
+                                <option value="personalizado">Producto personalizado</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteMessage">Mensaje o Especificaciones</label>
+                            <textarea id="quoteMessage" rows="4" placeholder="Describe lo que necesitas, medidas específicas, colores, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                            </button>
+                            <div class="whatsapp-direct">
+                                <p>¿Prefieres contacto inmediato?</p>
+                                <a href="https://wa.me/573236713326?text=Hola%20Fibras&Jacuzzis,%20me%20interesa%20cotizar%20un%20producto" target="_blank" class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Directo
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="quote-info">
+                    <div class="info-card highlight">
+                        <div class="info-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Ubicados en YOPAL</h3>
+                        <p>Calle 24 # 33 - 12 referencia cerca del homecenter.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Personalización Total</h3>
+                        <p>Todos nuestros productos son personalizables en medidas, colores y accesorios.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Garantía 3 Años</h3>
+                        <p>Todos nuestros productos cuentan con garantía de 3 años contra defectos de fabricación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Métodos de Pago -->
+    <section id="pagos" class="payment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Métodos de Pago</h2>
+                <p class="section-subtitle">Paga de la forma que más te convenga y con total seguridad</p>
+            </div>
+            
+            <div class="payment-methods">
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Efectivo</h3>
+                    <p>Paga en efectivo al momento de la entrega o en nuestras instalaciones.</p>
+                    <div class="payment-action">
+                        <a href="https://wa.me/573236713326?text=Hola,%20quiero%20pagar%20en%20efectivo%20un%20producto" target="_blank" class="btn-outline">
+<i class="fab fa-whatsapp"></i> Consultar
+                        </a>
+                    </div>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Transferencia Bancaria</h3>
+                    <p>Realiza tu pago directamente a nuestra cuenta bancaria.</p>
+                    <div class="payment-action">
+                        <a href="https://wa.me/573236713326?text=Hola,%20necesito%20los%20datos%20bancarios%20para%20transferencia" target="_blank" class="btn-outline">
+                            <i class="fab fa-whatsapp"></i> Solicitar Datos
+                        </a>
+                    </div>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Nequi / Daviplata</h3>
+                    <p>Paga fácilmente mediante Nequi, Daviplata u otras billeteras digitales.</p>
+                    <div class="payment-action">
+                        <a href="https://wa.me/3236713326?text=Hola,%20quiero%20pagar%20con%20Nequi/Daviplata" target="_blank" class="btn-outline">
+                            <i class="fab fa-whatsapp"></i> Solicitar Número
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-payment">
+                <div class="social-card facebook">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-content">
+                        <h3>Síguenos en Facebook</h3>
+                        <p>Mira más fotos de nuestros productos y proyectos terminados.</p>
+                        <a href="https://www.facebook.com/share/1Nsb3KuuRK/" target="_blank" class="btn-facebook">
+                            <i class="fab fa-facebook-f"></i> Visitar Facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="social-card whatsapp">
+                    <div class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="social-content">
+                        <h3>WhatsApp Directo</h3>
+                        <p>Contáctanos directamente para cotizaciones, dudas o seguimiento de pedidos.</p>
+                        <a href="https://wa.me/573001234567?text=Hola%20Fibras&Jacuzzis,%20tengo%20una%20consulta" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>Somos <strong>Fibras & Jacuzzis</strong>, una empresa con más de 20 años de experiencia en la fabricación de productos de fibra de vidrio de alta calidad. Nos especializamos en soluciones innovadoras para el hogar y espacios comerciales.</p>
+                    <p>Nuestra misión es transformar espacios comunes en lugares de relajación, diversión y funcionalidad mediante productos duraderos, estéticos y de fácil mantenimiento. Ubicados en Yopal - Casanare. </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+<span>Materiales de primera calidad</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Diseños modernos y personalizables</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entrega e instalación en todo el país</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantía extendida en todos los productos</span>
+                        </div>
+                    </div>
+                    <div class="about-contact">
+                        <a href="https://wa.me/573236713326?text=Hola%20Fibras&Jacuzzis%20,%20quiero%20más%20información%20sobre%20ustedes" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+                        </a>
+                        <a href="https://www.facebook.com/share/1Nsb3KuuRK/" target="_blank" class="btn-facebook">
+                            <i class="fab fa-facebook-f"></i> Visítanos en Facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte con cualquier pregunta o solicitud</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item highlight">
+                        <div class="info-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>WhatsApp Directo</h3>
+                            <p>+57 323 671 3326</p>
+                            <a href="https://wa.me/573236713326?text=Hola%20FibraVidrio%20Express,%20tengo%20una%20consulta" target="_blank" class="btn-whatsapp btn-small">
+                                <i class="fab fa-whatsapp"></i> Escribir ahora
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Facebook</h3>
+                            <p>@fibras&jacuzzis</p>
+                            <a href="https://www.facebook.com/share/1Nsb3KuuRK/" target="_blank" class="btn-facebook btn-small">
+                                <i class="fab fa-facebook-f"></i> Ver página
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+<div class="info-content">
+                            <h3>Correo Electrónico</h3>
+                            <p>lozanoh409@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfonos</h3>
+                            <p>+57 (311) 498 4437</p>
+                            <p>+57 (323) 671 3326</p>
+                            <p>+57 (313) 673 0550</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Correo Electrónico</h3>
+                            <p>lozanoh409@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-it
