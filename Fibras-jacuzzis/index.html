@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fabricamos jacuzzis, piscinas y productos en fibra de vidrio en Yopal. Cotiza por WhatsApp.">
+    
+    <title>Fibras & Jacuzzis - Productos en Fibra de Vidrio</title>
+    
+    <!-- SEO Mejorado -->
+    <meta name="keywords" content="fibra de vidrio, jacuzzis, piscinas, lavaderos, rodaderos, yopal, casanare">
+    <meta property="og:title" content="Fibras & Jacuzzis - Fabricantes en Fibra de Vidrio">
+    <meta property="og:description" content="Productos de fibra de vidrio de alta calidad en Yopal. Jacuzzis, piscinas, lavaderos y rodaderos personalizados.">
+    <meta property="og:image" content="image/logo.png">
+    <meta property="og:url" content="https://fibrasyjacuzzis.netlify.app">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Preconexión para mejor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/logo.png">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="#home" class="logo-link" aria-label="Inicio - Fibras & Jacuzzis Yopal">
+                    <img src="image/logo.png" alt="Logo Fibras & Jacuzzis" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-name">Fibras & Jacuzzis</span>
+                        <span class="logo-city">Yopal</span>
+                    </div>
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#products" class="nav-link">Productos</a></li>
+                <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li class="whatsapp-header">
+                    <a href="https://wa.me/573236713326?text=Hola%20Fibras%20%26%20Jacuzzis,%20quiero%20cotizar%20un%20producto" 
+                       target="_blank" 
+                       class="btn-whatsapp"
+                       aria-label="Cotizar por WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Cotizar
+                    </a>
+                </li>
+            </ul>
+
+            <div class="hamburger" aria-label="Menú móvil">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Fibras & Jacuzzis</h1>
+            <h2 class="hero-subtitle">Calidad y Diseño en Fibra de Vidrio</h2>
+            <p class="hero-description">
+                Fabricamos productos duraderos y personalizados en Yopal. Jacuzzis, piscinas, lavaderos y rodaderos diseñados para tus necesidades.
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-viewer">
+                <img id="mainImage" 
+                     src="image/jacuzzi0.jpg" 
+                     alt="Jacuzzi de fibra de vidrio - Fibras & Jacuzzis" 
+                     width="600" 
+                     height="350">
+                
+                <div class="thumbnails">
+                    <img src="image/jacuzzi11.png" 
+                         data-full="image/jacuzzi11.png" 
+                         class="thumb active" 
+                         alt="Jacuzzi"
+                         width="80" 
+                         height="60">
+                    <img src="image/piscina11.jpg" 
+                         data-full="image/piscina11.jpg" 
+                         class="thumb" 
+                         alt="Piscina"
+                         width="80" 
+                         height="60">
+                    <img src="image/rodadero0.png" 
+                         data-full="image/rodadero0.png" 
+                         class="thumb" 
+                         alt="Rodadero"
+                         width="80" 
+                         height="60">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PRODUCTOS ================= -->
+<section id="products" class="products-section">
+    <div class="container">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <p style="text-align: center; color: var(--gray-color); margin-bottom: 30px;">
+            Haz clic en cualquier producto para cotizarlo directamente por WhatsApp
+        </p>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Todos</button>
+            <button class="category-btn" data-category="jacuzzis">Jacuzzis</button>
+            <button class="category-btn" data-category="pools">Piscinas</button>
+            <button class="category-btn" data-category="sinks">Lavaderos</button>
+            <button class="category-btn" data-category="slides">Rodaderos</button>
+        </div>
+
+        <div id="productsContainer" class="products-grid">
+            <!-- Los productos se cargan dinámicamente con JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- ================= UBICACIÓN ================= -->
+<section id="ubicacion" class="location-section">
+    <div class="container">
+        <h2 class="section-title">Nuestra Ubicación</h2>
+
+        <div class="location-content">
+            <div class="location-info">
+                <h3>Visítanos en Yopal</h3>
+                <p><strong>Dirección:</strong> Calle 24 #33-12</p>
+                <p><strong>Referencia:</strong> Cerca de Homecenter</p>
+                <p><strong>Ciudad:</strong> Yopal – Casanare</p>
+                <p><strong>Horario:</strong> Lunes a Viernes 8AM - 6PM | Sábados 9AM - 2PM</p>
+                
+                <div style="margin-top: 25px;">
+                    <a href="https://wa.me/573236713326?text=Hola,%20quiero%20visitar%20su%20local%20en%20Yopal" 
+                       target="_blank" 
+                       class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Confirmar visita
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.487784314203!2d-72.38683163221756!3d5.342252323936769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6b0d006d2395df%3A0xf0d6b79878bb4e83!2sFibras%20%26%20Jacuzzi!5e0!3m2!1ses-419!2sco!4v1770136825944!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Fibras & Jacuzzis en Yopal">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+
+        <div class="contact-info">
+            <div class="info-item highlight">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <p>+57 323 671 3326</p>
+                    <small style="color: var(--gray-color); font-weight: normal;">
+                        Disponible de lunes a sábado
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <p style="margin-bottom: 20px; color: var(--gray-color);">
+                ¿Tienes preguntas o necesitas una cotización personalizada?
+            </p>
+            <a href="https://wa.me/573236713326?text=Hola%20Fibras%20%26%20Jacuzzis,%20tengo%20una%20consulta" 
+               target="_blank" 
+               class="btn-whatsapp"
+               style="padding: 15px 40px; font-size: 1.1rem;">
+                <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

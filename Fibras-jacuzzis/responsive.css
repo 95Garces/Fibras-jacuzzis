@@ -1,0 +1,110 @@
+/* ================= TABLETS ================= */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .map-container {
+        height: 350px;
+    }
+    
+    .whatsapp-float:hover {
+        width: 70px;
+        border-radius: 50%;
+    }
+    
+    .whatsapp-float:hover .float-text {
+        display: none;
+    }
+}
+
+/* ================= MÓVILES ================= */
+@media (max-width: 768px) {
+    /* ... otros estilos ... */
+    
+    .logo-name {
+        font-size: 1.1rem;
+    }
+    
+    .logo-city {
+        font-size: 0.85rem;
+        padding: 2px 8px;
+    }
+    
+    .logo-img {
+        height: 45px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: 30px 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: var(--transition);
+        z-index: 999;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .whatsapp-header {
+        margin-top: 10px;
+    }
+}
+
+/* ================= MÓVILES PEQUEÑOS ================= */
+@media (max-width: 480px) {
+    .logo-text {
+        display: none; /* En móviles muy pequeños, solo mostrar logo */
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .hero {
+        padding-top: 110px;
+    }
+}
