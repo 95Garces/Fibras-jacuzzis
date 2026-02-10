@@ -1,0 +1,531 @@
+/* ================= BREAKPOINT 1200px ================= */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 var(--space-xl);
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+    }
+}
+
+/* ================= BREAKPOINT 992px (Tablets) ================= */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        text-align: center;
+    }
+    
+    .hero-content {
+        order: 2;
+    }
+    
+    .hero-image {
+        order: 1;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .hero-description {
+        margin: 0 auto var(--space-xl);
+    }
+    
+    .hero-stats {
+        max-width: 600px;
+        margin: var(--space-xl) auto;
+    }
+    
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .map-card iframe {
+        height: 400px;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .whatsapp-float:hover {
+        width: 60px;
+        border-radius: var(--radius-full);
+    }
+    
+    .whatsapp-float:hover .float-text {
+        display: none;
+    }
+}
+
+/* ================= BREAKPOINT 768px (Tablets pequeñas) ================= */
+@media (max-width: 768px) {
+    :root {
+        --space-3xl: 3rem;
+        --space-2xl: 2rem;
+        --space-xl: 1.5rem;
+        --space-lg: 1rem;
+    }
+    
+    section {
+        padding: var(--space-2xl) 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Header */
+    .header {
+        padding: 0;
+    }
+    
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .logo-name {
+        font-size: 1.1rem;
+    }
+    
+    .logo-city {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .mobile-logo-text {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    
+    .logo-text {
+        display: none;
+    }
+    
+    /* Navegación móvil */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: var(--space-xl);
+        box-shadow: var(--shadow-lg);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        gap: 0;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        transform: translateX(-100%);
+    }
+    
+    .nav-menu.active {
+        transform: translateX(0);
+        left: 0;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .nav-link {
+        padding: 1rem;
+        justify-content: flex-start;
+        border-radius: var(--radius-md);
+        margin-bottom: 4px;
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(26, 107, 154, 0.05);
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin: var(--space-lg) 0 0;
+        gap: var(--space-sm);
+    }
+    
+    .action-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    /* Hero */
+    .hero {
+        padding-top: 100px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        max-width: 400px;
+    }
+    
+    .stat-item {
+        padding: var(--space-lg);
+    }
+    
+    /* Productos */
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--space-lg);
+    }
+    
+    .categories {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: var(--space-sm);
+        margin-bottom: var(--space-xl);
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .category-btn {
+        white-space: nowrap;
+    }
+    
+    /* Ubicación */
+    .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contacto */
+    .contact-main {
+        padding: var(--space-xl);
+    }
+    
+    .contact-main i {
+        font-size: 3rem;
+    }
+    
+    .contact-main p {
+        font-size: 1.25rem;
+    }
+}
+
+/* ================= BREAKPOINT 576px (Móviles grandes) ================= */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 var(--space-lg);
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .image-overlay {
+        top: var(--space-md);
+        left: var(--space-md);
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .thumbnails {
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+    
+    .thumb {
+        height: 60px;
+    }
+    
+    .thumb-label {
+        font-size: 0.7rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    
+    .product-specs {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-action {
+        padding: var(--space-xl);
+    }
+    
+    .whatsapp-float {
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+/* ================= BREAKPOINT 400px (Móviles pequeños) ================= */
+@media (max-width: 400px) {
+    .container {
+        padding: 0 var(--space-md);
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    .mobile-logo-text {
+        font-size: 0.8rem;
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9375rem;
+    }
+    
+    .stat-item {
+        padding: var(--space-md);
+    }
+    
+    .stat-number {
+        font-size: 1.25rem;
+    }
+    
+    .btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.875rem;
+    }
+    
+    .btn-large {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9375rem;
+    }
+    
+    .category-btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .category-btn i {
+        font-size: 0.875rem;
+    }
+    
+    .product-content {
+        padding: var(--space-lg);
+    }
+    
+    .product-title {
+        font-size: 1.125rem;
+    }
+    
+    .product-price {
+        font-size: 1.25rem;
+    }
+    
+    .whatsapp-float {
+        bottom: var(--space-md);
+        right: var(--space-md);
+        width: 45px;
+        height: 45px;
+        font-size: 1.25rem;
+    }
+}
+
+/* ================= DISPOSITIVOS TÁCTILES ================= */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover,
+    .nav-link:hover,
+    .product-card:hover,
+    .stat-item:hover,
+    .number-item:hover,
+    .thumb-wrapper:hover {
+        transform: none;
+    }
+    
+    .btn:active,
+    .nav-link:active,
+    .product-card:active,
+    .stat-item:active,
+    .number-item:active,
+    .thumb-wrapper:active {
+        transform: scale(0.98);
+    }
+    
+    .hamburger:active {
+        background-color: var(--light-gray);
+    }
+    
+    .whatsapp-float:active {
+        transform: scale(0.95);
+    }
+    
+    /* Mejorar tamaño de objetivos táctiles */
+    .btn,
+    .nav-link,
+    .category-btn,
+    .number-item,
+    .thumb-wrapper {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .product-card {
+        cursor: default;
+    }
+}
+
+/* ================= PREFERENCIAS DE REDUCCIÓN DE MOVIMIENTO ================= */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .hero-main-image,
+    .product-img {
+        transition: none !important;
+    }
+}
+
+/* ================= MODO OSCURO SISTEMA ================= */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white: #0f172a;
+        --light-bg: #1e293b;
+        --light-gray: #334155;
+        --gray: #64748b;
+        --dark-gray: #cbd5e1;
+        --dark: #f1f5f9;
+        --primary-color: #60a5fa;
+        --primary-light: #93c5fd;
+        --primary-dark: #3b82f6;
+        --secondary-color: #5eead4;
+        --secondary-light: #99f6e4;
+        --secondary-dark: #2dd4bf;
+    }
+    
+    body {
+        background-color: #0f172a;
+        color: #f1f5f9;
+    }
+    
+    .hero {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+    
+    .location-section {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    }
+    
+    .contact-section {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+    
+    .header {
+        background-color: rgba(15, 23, 42, 0.95);
+    }
+    
+    .bar {
+        background-color: var(--dark);
+    }
+    
+    .stat-item,
+    .info-item,
+    .number-item {
+        background-color: #1e293b;
+    }
+    
+    .image-viewer,
+    .product-card,
+    .location-card,
+    .map-card,
+    .contact-card {
+        background-color: #1e293b;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .thumbnails {
+        background-color: #334155;
+    }
+}
