@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto rápido - Fibras & Jacuzzis</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Fondo en mosaico con logo.png */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('image/logo.png');
+      background-repeat: repeat;
+      background-size: 120px auto; /* Tamaño de cada mosaico */
+      opacity: 0.08; /* Transparencia para que no opaque el contenido */
+      z-index: -1;
+      pointer-events: none; /* Para que no interfiera con los clics */
+    }
+    
+    /* Filtro adicional para suavizar el mosaico */
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(245, 247, 250, 0.7); /* Color de fondo con transparencia */
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    .card {
+      background: rgba(255, 255, 255, 0.95); /* Fondo semi-transparente */
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 360px;
+      width: 90%;
+      backdrop-filter: blur(5px); /* Efecto glassmorphism */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .logo-container {
+      margin-bottom: 20px;
+    }
+    
+    .logo-container img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      font-size: 20px;
+      margin-bottom: 25px;
+      color: #1a6b9a; /* Color que coincide con tu sitio principal */
+      font-weight: 600;
+    }
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    a:active {
+      transform: translateY(-1px);
+    }
+    
+    .call {
+      background: linear-gradient(135deg, #28a745, #20c997);
+    }
+    
+    .call:hover {
+      background: linear-gradient(135deg, #20c997, #28a745);
+    }
+    
+    .web {
+      background: linear-gradient(135deg, #007bff, #1a6b9a);
+    }
+    
+    .web:hover {
+      background: linear-gradient(135deg, #1a6b9a, #007bff);
+    }
+    
+    .whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+    }
+    
+    .whatsapp:hover {
+      background: linear-gradient(135deg, #128c7e, #25d366);
+    }
+    
+    .icon {
+      font-size: 20px;
+    }
+    
+    .company-name {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+      font-weight: 500;
+    }
+    
+    .company-name strong {
+      color: #1a6b9a;
+    }
+    
+    /* Responsive */
+    @media (max-width: 480px) {
+      .card {
+        padding: 24px 20px;
+        width: 85%;
+      }
+      
+      h1 {
+        font-size: 18px;
+      }
+      
+      a {
+        padding: 14px;
+        font-size: 15px;
+      }
+      
+      body::before {
+        background-size: 80px auto; /* Mosaico más pequeño en móviles */
+      }
+    }
+    
+    @media (max-width: 360px) {
+      .card {
+        padding: 20px 16px;
+      }
+      
+      h1 {
+        font-size: 16px;
+      }
+      
+      a {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-container">
+      <!-- Logo principal -->
+      <img src="image/logo.png" alt="Logo Fibras & Jacuzzis">
+    </div>
+    
+    <h1>Seleccione una opción de contacto</h1>
+    
+    <!-- Botón para llamar -->
+    <a class="call" href="tel:3236713326">
+      <span class="icon">📞</span>
+      <span>Llamar ahora</span>
+    </a>
+    
+    <!-- Botón para WhatsApp (opcional) -->
+    <a class="whatsapp" href="https://wa.me/573236713326" target="_blank">
+      <span class="icon">💬</span>
+      <span>WhatsApp</span>
+    </a>
+    
+    <!-- Botón para visitar el sitio web -->
+    <a class="web" href="https://fibrasyjacuzzisyopal.delpoder2024.workers.dev/" target="_blank">
+      <span class="icon">🌐</span>
+      <span>Visitar sitio web completo</span>
+    </a>
+    
+    <div class="company-name">
+      <strong>Fibras & Jacuzzis</strong> · Yopal, Casanare
+    </div>
+  </div>
+</body>
+</html>
